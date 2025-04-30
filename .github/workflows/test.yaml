@@ -1,4 +1,4 @@
-name: MSBuild
+name: Test
 
 on:
   workflow_dispatch  :
@@ -35,4 +35,5 @@ jobs:
         python3 --version
         cmake --version
         file "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\devenv.exe"
+        git --version
         
