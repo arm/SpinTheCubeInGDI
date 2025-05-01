@@ -31,7 +31,10 @@ jobs:
       shell: bash
 
     - name: Install winget
-      uses: Cyberboss/install-winget@v1
+      run: |
+        Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
+        Install-Script winget-install -Force
+      shell: powershell
 
     - name: Call Visual Studio devenv.com
       run: |
