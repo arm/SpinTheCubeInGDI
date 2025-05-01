@@ -9,8 +9,7 @@ on:
 
 jobs:
   build:
-    runs-on: large-arm-runner
-
+    runs-on: win-11-arm
     steps:
     - uses: actions/checkout@v4
   
