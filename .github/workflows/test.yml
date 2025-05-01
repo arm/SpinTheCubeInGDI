@@ -38,6 +38,7 @@ jobs:
     - name: Install winget
       run: |
         Install-Script winget-install -Force
+        winget --version
       shell: powershell
 
     - name: Call Visual Studio devenv.com
