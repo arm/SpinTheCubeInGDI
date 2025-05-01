@@ -30,9 +30,13 @@ jobs:
         pwd
       shell: bash
 
-    - name: Install winget
+    - name: Install NuGet
       run: |
         Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
+      shell: powershell
+
+    - name: Install winget
+      run: |
         Install-Script winget-install -Force
       shell: powershell
 
